@@ -32,4 +32,5 @@ wget
 feh (an image viewer)
 mplayer (a video player)
 termsaver (print text slowly in terminal)
+mosquitto
 ```

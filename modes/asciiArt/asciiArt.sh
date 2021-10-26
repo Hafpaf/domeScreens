@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # Requirements:
-#  - rfc
+#  - rfc ( doc-rfc)
 #  - lolcat
 #  - termsaver
+#  - pv
 
 random_rfc(){
 /usr/bin/ls -1 /usr/share/doc/rfc/txt/*.txt | grep -v rfc-index | shuf | head -1
@@ -27,5 +28,5 @@ do
  timeout --foreground 10 curl -s https://hamkong.herokuapp.com/gifanime?g=cat; clear;
  cat $0 | lolcat -a --speed=30.0 --duration=8; sleep 2; clear;
  slowType 10 4500000 < hacker.txt; clear
- #timeout --foreground 20 curl -s https://asciitv.fr  
+ timeout --foreground 20 curl -s https://asciitv.fr
 done

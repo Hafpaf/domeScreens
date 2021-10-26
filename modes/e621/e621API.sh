@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo $1
+
 # Display help message
 Help(){
   echo "This script requests posts from e621 or e926 related to a tag"
